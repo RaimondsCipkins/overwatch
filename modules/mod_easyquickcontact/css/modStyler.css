@@ -1,0 +1,50 @@
+span.iconChanger{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding: 6px 4px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #e3e3e3;
+}
+
+span.iconChanger > i:before{
+    color: #194172;
+}
+
+div.control-group.HeadGroup{
+    background-color: #F5F5F5;
+    text-shadow: 1px 1px 1px white;
+    border-bottom: 4px solid #e3e3e3;
+    padding: 0px 25px;
+    margin-bottom: 0px !important;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+
+div.control-group.GroupFieldElem{
+    margin-bottom: 0px !important;
+    border: 1px solid #e3e3e3;    
+    border-top: 0px;
+}
+
+div#general > div.row-fluid > div.span9 > hr
+{
+    margin: 0px;
+}
+
+div.control-group.GroupFieldElem > div.control-label
+
+{
+    padding: 22px 10px;
+}
+
+div.control-group.GroupFieldElem > div.controls{
+    padding: 20px 10px;
+}
+
+div.control-group.GroupFieldElem > div.controls{
+    border-left: 1px solid #e3e3e3
+}

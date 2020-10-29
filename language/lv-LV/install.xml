@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.7" client="site" type="language" method="upgrade">
+	<name>Latvian (lv-LV)</name>
+	<tag>lv-LV</tag>
+	<version>3.7.4</version>
+	<creationDate>2017. gada jūlijs</creationDate>
+	<author>Latvian Joomla translation team</author>
+	<authorEmail>lemings@inbox.lv</authorEmail>
+	<authorUrl>latvian site language pack for Joomla</authorUrl>
+	<copyright>Copyright (C) 2005 - 2017 un Open Source Matters. Visas tiesības aizsargātas.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>latvian site language pack for Joomla</description>
+	<files>
+		<folder>/</folder>
+		<filename file="meta">install.xml</filename>
+	</files>
+	<params />
+</extension>

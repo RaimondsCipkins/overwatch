@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="module" client="site" method="upgrade">
+	<name>Easy Quick Contact</name> 
+	<version>1.3.0</version>
+    <creationDate>February, 2016</creationDate>
+    <author>JoomBoost</author>
+    <authorEmail>support@joomboost.com</authorEmail>
+    <authorUrl>https://www.joomboost.com</authorUrl>
+    <copyright>Copyright 2013 -2020 - https://www.joomboost.com</copyright>
+    <license>GNU/GPL</license>
+	<description>
+		<![CDATA[<div class="well"><p>Simple and easy to use contact form module for joomla, customizable colors and labels, with popup or flat view.</p><p>
+			<a class="btn btn-primary" href="https://www.joomboost.com/joomla-modules/26-easy-quick-contact.html" target="_blank"><span class="icon-home"></span> Product Page</a> 
+			<a class="btn btn-warning" href="https://www.joomboost.com/support/documentation/47-joomla-modules/82-guide-of-easy-quick-contact.html" target="_blank"><span class="icon-book"></span> Documentation</a> 
+			<a class="btn btn-success" href="https://www.joomboost.com/modules-changelogs/20-easy-quick-contact-changelog.html" target="_blank"><span class="icon-clock"></span> ChangeLog</a> 
+			<a class="btn btn-danger" href="https://www.joomboost.com/support/forums/categories/4-j-modules/15-free-modules.html" target="_blank"><span class="icon-comment"></span> Support</a>
+			<a class="btn btn-default" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L8ZST8YYSJED4"><span class="icon-help"></span>Donate</a>
+			</p>
+		</div>]]>
+	</description>	
+	<files>
+		<filename module="mod_easyquickcontact">mod_easyquickcontact.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>php</folder>
+		<folder>tmpl</folder>
+	</files>	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_easyquickcontact.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_easyquickcontact/php">
+			<fieldset name="basic">
+				<field type="spacer" name="MOD_EASYQUICKCONTACT_MAIN" />
+				<field name="jQuery" type="radio" class="btn-group" default="0" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+					<option value="0">Disable</option>
+					<option	value="1">Enable</option>
+				</field>
+				
+				<field name="popUp" type="list" default="0" label="Display Type" description="">
+					<option value="0">Normal</option>
+					<option	value="1">Pop-up</option>
+				</field>
+				<field name="popUpButton" type="text" default="Quick Contact" label="Pop Up Button Text" description="Change pop-up button text here." />
+								
+				<field type="spacer" name="MOD_EASYQUICKCONTACT_CONTACTFORM" />
+				<field name="name" type="text" default="Name" label="Name Label" description="Change name label text." />
+				<field name="email" type="text" default="Email" label="Email Label" description="Change email lable text." />
+				<field name="message" type="text" default="Message" label="Message Label" description="Change message label text." />
+				<field name="captcha_label" type="list" default="1" label="Captcha" description="Enable or Disable captcha.">
+					<option value="1">Enable</option>
+					<option value="2">Disable</option>
+				</field>				
+				<field name="captcha" type="text" default="Captcha" label="Captcha Label" description="Change captcha lable text." />
+				<field name="submit" type="text" default="Send" label="Submit Button Text" description="Change submit button text." />
+				
+				<field type="spacer" name="MOD_EASYQUICKCONTACT_EMAIL" />
+				
+				
+				<field name="recipient" type="email" default="" label="Recipient Email" description="Email address to receive the emails sent via Easy Quick Contact." />
+				<field name="subject" type="text" default="Easy Quick Contact" label="Email Subject" description="Subject of Quick Contact emails." />
+								
+				<field type="spacer" name="MOD_EASYQUICKCONTACT_COLORS" />
+				
+				<field name="buttonBg" type="color" default="#E60000" label="Button Background" description="" />
+				<field name="buttonBgH" type="color" default="#333333" label="Button Bg Hover" description="" />
+				<field name="buttonText" type="color" default="#ffffff" label="Button Text" description="" />				
+
+				<field name="input_bg" type="color" default="#F5F5F5" label="Input Background" description="" />
+				<field name="input_brd" type="color" default="#dddddd" label="Input Border Color" description="" />
+				<field name="input_text" type="color" default="#333333" label="Input Text Color" description="" />							
+				<field type="asset" />
+			</fieldset>		
+		</fields>
+	</config>
+	<updateservers>    
+		<server type="extension" priority="1" name="Easy Facebook Send Button Update">
+			<![CDATA[https://www.joomboost.com/index.php?option=com_mediastore&task=pluginTask&plugin=joomla&subtask=server&id=26]]>
+		</server>
+	</updateservers>
+</extension>
